@@ -1788,3 +1788,13 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }
+
+a {
+  width: 280px;
+}
+
+@media screen and (max-width: 3440px) {
+  a {
+    width: 290px;
+  }
+}
