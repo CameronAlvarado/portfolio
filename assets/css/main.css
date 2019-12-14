@@ -1638,7 +1638,7 @@ body.is-preload #bg:before {
 #header nav.use-middle:after {
   content: "";
   display: block;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: calc(50% - 1px);
   width: 1px;
