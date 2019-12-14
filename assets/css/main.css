@@ -399,18 +399,6 @@ hr {
   padding-top: 2.74px;
 }
 
-/* nav {
-  border: 1px solid #eee;
-} */
-/* nav > ul {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-} */
-/* nav:hover > ul {
-  visibility: visible;
-  opacity: 1;
-} */
 /* ****************** */
 
 #spacex-txt,
@@ -419,11 +407,33 @@ hr {
   width: 500px;
   display: none;
 }
-/* .spacex,
-.silent,
-.keycon {
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   width: 300px;
-} */
+  background-color: black;
+  background-blend-mode: multiply;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute; /* layers the element on top of other */
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 #spacex-img {
   display: none;
