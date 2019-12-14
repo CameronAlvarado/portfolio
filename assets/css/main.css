@@ -399,6 +399,137 @@ hr {
   padding-top: 2.74px;
 }
 
+/* ****************** */
+
+#spacex-txt,
+#silent-txt,
+#keycon-txt {
+  width: 500px;
+  display: none;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  /* width: 300px; */
+  background-color: black;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid white;
+
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+
+  /* left: 50%; */
+  /* margin-left: -150px; */
+  width: 100%;
+  margin-left: -50%;
+
+  /* Position the tooltip */
+  position: absolute; /* layers the element on top of other */
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltipimage {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  background-color: black;
+
+  border: 1px solid white;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+
+  /* padding: 5px 0; */
+
+  /* Sizes and positions hte tooltip */
+  width: 100%;
+  height: auto;
+  bottom: 100%;
+  /* left: 50%; */
+  margin-left: -50%; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+  /* Position the tooltip */
+  position: absolute; /* layers the element on top of other */
+  z-index: 1;
+}
+
+.tooltip:hover .tooltipimage {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* #spacex-img {
+  display: none;
+}
+
+.spacex:hover #spacex-txt {
+  display: block;
+}
+
+.spacex:hover #spacex-img {
+  display: block;
+} */
+
+/* ****************** */
+/* 
+#silent-txt {
+  visibility: visible;
+} */
+
+/* #silent-img {
+  display: none;
+}
+
+.silent:hover #silent-txt {
+  display: none;
+}
+
+.silent:hover #silent-img {
+  display: block;
+} */
+
+/* ****************** */
+/* 
+#silent-txt {
+  visibility: visible;
+} */
+
+/* #keycon-img {
+  display: none;
+}
+
+.keycon:hover #keycon-txt {
+  display: none;
+}
+
+.keycon:hover #keycon-img {
+  display: block;
+}
+
+/* ****************** */
+
+/* #spacex-img,
+#silent-img,
+#keycon-img {
+  width: 100%;
+  height: auto;
+} */
+
+/* ****************** */
+
 .align-left {
   text-align: left;
 }
@@ -1492,7 +1623,7 @@ body.is-preload #bg:before {
 
 #header nav ul li a {
   display: block;
-  min-width: 12rem;
+  min-width: 14rem;
   height: 2.75rem;
   line-height: 2.75rem;
   padding: 0 1.25rem 0 1.45rem;
@@ -1789,12 +1920,12 @@ body.is-preload #footer {
   opacity: 0;
 }
 
-a {
+/* a {
   width: 280px;
-}
+} */
 
-@media screen and (max-width: 3440px) {
+/* @media screen and (max-width: 3440px) {
   a {
     width: 290px;
   }
-}
+} */
