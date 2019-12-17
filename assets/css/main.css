@@ -465,64 +465,15 @@ hr {
   opacity: 1;
 }
 
-/* #spacex-img {
-  display: none;
+.tech-stack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.spacex:hover #spacex-txt {
-  display: block;
+#tech-stack {
+  width: 15%;
 }
-
-.spacex:hover #spacex-img {
-  display: block;
-} */
-
-/* ****************** */
-/* 
-#silent-txt {
-  visibility: visible;
-} */
-
-/* #silent-img {
-  display: none;
-}
-
-.silent:hover #silent-txt {
-  display: none;
-}
-
-.silent:hover #silent-img {
-  display: block;
-} */
-
-/* ****************** */
-/* 
-#silent-txt {
-  visibility: visible;
-} */
-
-/* #keycon-img {
-  display: none;
-}
-
-.keycon:hover #keycon-txt {
-  display: none;
-}
-
-.keycon:hover #keycon-img {
-  display: block;
-}
-
-/* ****************** */
-
-/* #spacex-img,
-#silent-img,
-#keycon-img {
-  width: 100%;
-  height: auto;
-} */
-
-/* ****************** */
 
 .align-left {
   text-align: left;
