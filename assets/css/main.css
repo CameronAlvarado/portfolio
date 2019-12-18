@@ -401,17 +401,16 @@ hr {
 
 /* ****************** */
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text 
+} */
 
-.tooltip .tooltiptext {
+/* .tooltip .tooltiptext {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
-  /* width: 300px; */
   background-color: black;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -421,13 +420,10 @@ hr {
   text-align: center;
   padding: 5px;
 
-  /* left: 50%; */
-  /* margin-left: -150px; */
   width: 100%;
   margin-left: -50%;
 
-  /* Position the tooltip */
-  position: absolute; /* layers the element on top of other */
+  position: absolute;
   z-index: 1;
 }
 
@@ -445,25 +441,18 @@ hr {
   border: 1px solid white;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
-
-  /* padding: 5px 0; */
-
-  /* Sizes and positions hte tooltip */
   width: 100%;
   height: auto;
   bottom: 100%;
-  /* left: 50%; */
-  margin-left: -50%; /* Use half of the width (120/2 = 60), to center the tooltip */
-
-  /* Position the tooltip */
-  position: absolute; /* layers the element on top of other */
+  margin-left: -50%;
+  position: absolute;
   z-index: 1;
 }
 
 .tooltip:hover .tooltipimage {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 .tech-stack {
   display: flex;
@@ -475,7 +464,7 @@ hr {
   width: 15%;
 }
 
-.align-left {
+#github-link .align-left {
   text-align: left;
 }
 
