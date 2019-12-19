@@ -454,6 +454,25 @@ hr {
   opacity: 1;
 } */
 
+.screenshots .screenshot2 {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.screenshots:hover .screenshot2 {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.screenshots:hover .screenshot1 {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .tech-stack {
   display: flex;
   align-items: center;
@@ -462,6 +481,10 @@ hr {
 
 #tech-stack {
   width: 15%;
+}
+
+#lambdalogo {
+  border-bottom: none;
 }
 
 #github-link .align-left {
