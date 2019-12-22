@@ -908,10 +908,15 @@ input[type="radio"] + label:before {
   transition: transform 0.2s;
 }
 
-.image img:active {
+.bg {
+  transition: transform 0.2s;
+}
+
+.bg img:active {
   transform: scale(1.5);
 }
-.image img:hover {
+
+.bg img:hover {
   transform: scale(1.5);
 }
 
