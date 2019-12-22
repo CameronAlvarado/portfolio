@@ -17,13 +17,17 @@
     <!-- <link rel="icon" href="silent-auction-portfolio.png" type="image/x-icon" /> -->
 
     <!-- 
-    - Add more screenshots.
+    - Add more screenshots when keycon is ready.
     - Remove Lambda logo
     - Add photography Portfolio
+    - Improve artifact descriptions.
   -->
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -32,8 +36,8 @@
       <header id="header">
         <div class="logo">
           <span class="icon fa-gem">
-            <a id="lambdalogo" target="blank" href="https://go.lambdaschool.com/?utm_source=paid&utm_medium=google&utm_campaign=&campaignid=1147145732&utm_content=coding+bootcamps&adgroupid=53144480055&utm_term=lambda%20school&matchtype=e&device=c&placement=&network=g&creative=354045597756&src=adwords&ad=coding+bootcamps&gclid=Cj0KCQiAuefvBRDXARIsAFEOQ9EjkzVKndZ19x78Ij-7gCykpj3dq0u6uj98dbAQuQ7ZgTCz3J_BB9QaApaMEALw_wcB" >
-            <img src="images/lambda-logo.png" class="icon-github" />
+            <a id="camera-icon" href="#" >
+            <img src="images/camera.png" />
           </a>
           </span>
         </div>
@@ -600,5 +604,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      
+          var bgArray = ['1.jpg', '2.jpg'];
+          var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+      
+          // $('#bg').css('background', bg);
+      
+          // If you have defined a path for the images
+          var path = 'images/bgimages/';
+      
+          // then you can put it right before the variable 'bg'
+          $("#bg").css("background-image", "url("+ path+bg + ")");
+          console.log(path+bg)
+          // $("#bg").css("border", "3px solid red");
+      
+      }); 
+      </script>  
   </body>
+  <!-- Script -->
 </html>
