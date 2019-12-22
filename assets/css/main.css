@@ -901,10 +901,18 @@ input[type="radio"] + label:before {
   width: 100%;
 }
 
-.image.main {
+.image img {
   display: block;
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
   width: 100%;
+  transition: transform 0.2s;
+}
+
+.image img:active {
+  transform: scale(1.5);
+}
+.image img:hover {
+  transform: scale(1.5);
 }
 
 .image.main img {

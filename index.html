@@ -36,8 +36,8 @@
       <header id="header">
         <div class="logo">
           <span class="icon fa-gem">
-            <a id="camera-icon" href="#" >
-            <img src="images/camera.png" />
+            <a id="camera-icon" href="#photos" >
+            <img src="images/camera.png"/>
           </a>
           </span>
         </div>
@@ -277,6 +277,20 @@
               ></a>
             </li>
           </ul>
+        </article>
+
+        <article id="photos">
+          <h2 class="major">photos</h2>
+          <span class="image main">
+            <!-- <img src="images/pic01.jpg" alt=""/> -->
+            <img src="images/bgimages/1.jpg" alt=""/>
+            <img src="images/bgimages/8.jpg" alt=""/>
+            <img src="images/bgimages/4.jpg" alt=""/>
+            <img src="images/bgimages/6.jpg" alt=""/>
+            <img src="images/bgimages/3.jpg" alt=""/>
+            <img src="images/bgimages/5.jpg" alt=""/>
+            <img src="images/bgimages/7.jpg" alt=""/>
+          </span>
         </article>
 
         <!-- Elements -->
@@ -605,22 +619,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
+      function changeBG() {
       
-          var bgArray = ['1.jpg', '2.jpg'];
-          var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+          // var bgArray = ['1.jpg', '2.jpg'];
+          // var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
       
-          // $('#bg').css('background', bg);
+          // // $('#bg').css('background', bg);
       
-          // If you have defined a path for the images
-          var path = 'images/bgimages/';
+          // // If you have defined a path for the images
+          // var path = 'images/bgimages/';
       
-          // then you can put it right before the variable 'bg'
-          $("#bg").css("background-image", "url("+ path+bg + ")");
-          console.log(path+bg)
-          // $("#bg").css("border", "3px solid red");
+          // // then you can put it right before the variable 'bg'
+          // $("#bg").css("background-image", "url("+ path+bg + ")");
+          // console.log(path+bg)
+          // // $("#bg").css("border", "3px solid red");
+
+          var element = document.querySelector('#wrapper');
+          //use this instruction wherever you want to add the new class that will override the property
+          element.id = 'wrapper2';     
       
-      }); 
+      };  
       </script>  
   </body>
   <!-- Script -->
