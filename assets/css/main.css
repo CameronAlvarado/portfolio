@@ -912,12 +912,12 @@ input[type="radio"] + label:before {
   transition: transform 0.2s;
 }
 
-.bg img:active {
-  transform: scale(1.5);
-}
+/* .bg img:active {
+  transform: scale(1.3);
+} */
 
 .bg img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .image.main img {
