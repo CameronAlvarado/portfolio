@@ -12,14 +12,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-
-    <!-- <title>Cameron Alvarado</title> -->
-    <!-- <link rel="icon" href="silent-auction-portfolio.png" type="image/x-icon" /> -->
-
+    
     <!-- 
     - Add more screenshots when keycon is ready.
-    - Remove Lambda logo
-    - Add photography Portfolio
+    - Add more photography / portfolio
     - Improve artifact descriptions.
   -->
 
@@ -52,29 +48,33 @@
           </div>
         </div>
         <nav>
+          <!-- Portfolio Pieces Row -->
           <ul>
             <li class="tooltip">
               <a href="#keycon"
-                >Key Conservation</a><span></span>
+                >Key Conservation</a>
             </li>
             <li class="tooltip">
-              <a
-                href="#silent"
-                >Silent Auction</a
-              ><span class="tooltiptext">
+              <a href="#silent"
+                >Silent Auction</a>
             </li>
             <li class="tooltip">
+              <a href="#wasteland"
+                >Digital Wasteland</a>
+            </li>
+            <!-- <li class="tooltip">
               <a
                 href="#spacex"
                 >SpaceX API Project</a><span class="tooltiptext"></span >
-              <!-- <img class="tooltipimage" src="images/spacexpage.png" /> -->
-            </li>
+            </li> -->
 
             <!-- <li><a href="#elements">Elements</a></li> -->
             <!-- <li><a href="#intro">Intro</a></li> -->
+
           </ul>
         </nav>
         <nav>
+         <!-- 2nd Row -->
           <ul>
             <li class="tooltip"><a href="#intro">About Me</a></li>
             <li class="tooltip"><a href="#work">Skills</a></li>
@@ -128,6 +128,7 @@
             <li>HTML/CSS</li>
             <li>SASS/LESS</li>
             <li>Java Spring</li>
+            <li>Python</li>
             <li>Git</li>
             <li>SQL</li>
             <li>REST</li>
@@ -192,6 +193,34 @@
             <li>Utilized Axios to make API calls to back-end servers.</li>
           </ul>
           <a href="https://github.com/BW-Silent-Auction/Front-End-SA/tree/dev">Github Repo</a>
+        </article>
+
+        <!-- Wasteland -->
+        <article id="wasteland">
+          <a href="https://fervent-panini-5d9eca.netlify.com" target="blank"><h2 class="major">Digital Wasteland</h2></a>
+          
+          <span class="image main">
+            <span class="screenshots">
+              <a href="https://wasteland.netlify.com/login" target="blank">
+                <img class="screenshot1" src="images/wasteland.png" />
+              </a>
+              <a href="https://wasteland.netlify.com/login" target="blank">
+                <img class="screenshot2" src="images/wasteland2.png" />
+              </a>
+            </span>
+          </span>
+          <p>
+            A text-based RPG game made during a week long hack-a-thon. Users can register an account, explore 120 generated rooms and pick up items throughout the wasteland. They can also chat with other users using the Pusher ChatKit API. I worked mostly on the front-end and integrated React Vis and CSS.
+          </p>
+          <h3>Javascript | React | Python | Django</h3>
+          <ul>
+            <li>Utilized Python / Django to build a back-end server.</li>
+            
+            <li>Used React to build a front-end interface</li>
+
+            <li>Integrated Pusher to enable chat between online users</li>
+          </ul>
+          <a href="https://github.com/django-adventure">Github Repo</a>
         </article>
 
         <!-- Space X -->
@@ -610,7 +639,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         </p>
       </footer>
     </div>
-~
+
     <!-- BG -->
     <div id="bg"></div>
 
@@ -620,28 +649,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
-      function changeBG() {
-      
-          // var bgArray = ['1.jpg', '2.jpg'];
-          // var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-      
-          // // $('#bg').css('background', bg);
-      
-          // // If you have defined a path for the images
-          // var path = 'images/bgimages/';
-      
-          // // then you can put it right before the variable 'bg'
-          // $("#bg").css("background-image", "url("+ path+bg + ")");
-          // console.log(path+bg)
-          // // $("#bg").css("border", "3px solid red");
-
-          var element = document.querySelector('#wrapper');
-          //use this instruction wherever you want to add the new class that will override the property
-          element.id = 'wrapper2';     
-      
-      };  
-      </script>  
+    <script type="text/javascript"></script>  
   </body>
-  <!-- Script -->
 </html>
