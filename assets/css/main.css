@@ -160,6 +160,11 @@ textarea {
   appearance: none;
 }
 
+/* Hides scrollbar */
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
 /* Basic */
 
 @-ms-viewport {
@@ -477,6 +482,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 8px;
 }
 
 #tech-stack {
