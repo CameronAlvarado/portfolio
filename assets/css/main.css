@@ -256,6 +256,9 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
+  color: orange;
+  text-shadow: 1px 3px 10px black;
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
 strong,
@@ -406,24 +409,25 @@ hr {
 
 /* ****************** */
 
-/* .tooltip {
+.tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text 
-} */
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
 
-/* .tooltip .tooltiptext {
+.tooltip .tooltipbottom {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.486);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-  border: 1px solid white;
+  border-top: 1px solid white;
 
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding-top: 5.5%;
+  padding-bottom: 5.5%;
 
   width: 100%;
   margin-left: -50%;
@@ -432,32 +436,33 @@ hr {
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltipbottom {
   visibility: visible;
   opacity: 1;
 }
 
-.tooltip .tooltipimage {
+.tooltip .tooltiptop {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.486);
 
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   width: 100%;
-  height: auto;
+  padding-top: 5.5%;
+  padding-bottom: 5.5%;
   bottom: 100%;
   margin-left: -50%;
   position: absolute;
   z-index: 1;
 }
 
-.tooltip:hover .tooltipimage {
+.tooltip:hover .tooltiptop {
   visibility: visible;
   opacity: 1;
-} */
+}
 
 .screenshots .screenshot2 {
   display: none;
@@ -489,9 +494,13 @@ hr {
   width: 13%;
 }
 
+#orange {
+  color: orange;
+}
+
 /* #lambdalogo {
   border-bottom: none;
-} */
+}
 
 #github-link .align-left {
   text-align: left;
