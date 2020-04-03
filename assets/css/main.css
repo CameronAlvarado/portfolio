@@ -258,7 +258,7 @@ a:hover {
   border-bottom-color: transparent;
   color: orange;
   text-shadow: 1px 3px 10px black;
-  background-color: rgba(0, 0, 0, 0.493);
+  /* background-color: rgba(0, 0, 0, 0.493); */
 }
 
 strong,
@@ -1865,9 +1865,17 @@ body.is-preload #header .content .inner {
   }
 }
 
+/* Additional mobile media queries */
+
 @media screen and (max-width: 480px) {
   #main article {
     padding: 3rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tooltiptop {
+    display: none;
   }
 }
 
