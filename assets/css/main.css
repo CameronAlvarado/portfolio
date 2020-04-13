@@ -412,7 +412,8 @@ hr {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  /* border-bottom: 1px dotted black;  */
+  /* If you want dots under the hoverable text */
 }
 
 .tooltip .tooltipbottom {
@@ -1598,7 +1599,7 @@ body.is-preload #bg:before {
 
 #header nav ul li {
   padding-left: 0;
-  border-left: solid 1px #ffffff;
+  /* border-left: solid 1px #ffffff; */
 }
 
 /* added for skills list */
