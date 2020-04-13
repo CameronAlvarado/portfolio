@@ -419,7 +419,7 @@ hr {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
-  background-color: rgba(0, 0, 0, 0.486);
+  /* background-color: rgba(0, 0, 0, 0.486); */
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   border-top: 1px solid white;
@@ -445,8 +445,7 @@ hr {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
-  background-color: rgba(0, 0, 0, 0.486);
-
+  /* background-color: rgba(0, 0, 0, 0.486); */
   border-bottom: 1px solid white;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -1918,4 +1917,8 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
   opacity: 0;
+}
+
+.bullets li {
+  list-style-type: square;
 }
