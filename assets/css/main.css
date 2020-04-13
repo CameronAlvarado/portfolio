@@ -1397,7 +1397,8 @@ button {
   z-index: 1;
 }
 
-#camera-icon {
+#camera-icon,
+#repo-link {
   border-bottom: none;
 }
 
